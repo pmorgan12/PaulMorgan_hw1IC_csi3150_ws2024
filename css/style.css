@@ -1,0 +1,133 @@
+body {
+    background-color: black; /* Background color */
+    color: rgb(0, 0, 0); /* Font color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+}
+
+h5{
+    color: lightgray;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+.product-card {
+    width: 800px; /* Overall parent container width */
+    height: 540px; /* Allow height to adjust based on content */
+    margin: 120px auto; /* Top margin for separation from the window */
+    display: flex; /* Aligns child elements side by side */
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.left-img-col {
+    width: 50%; /* 50% width for image column */
+}
+
+.left-img-col img {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-top-left-radius: 10px; /* Rounded corners */
+    border-bottom-left-radius: 10px; /* Rounded corners */
+}
+
+.right-info-col {
+    padding: 40px; /* Padding for the right sub-container */
+    width: 50%; /* 50% width for info column */
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: space-between; /* Spaces out items */
+}
+
+h3 {
+    font-size: 32px; /* Product heading font size */
+    margin: 15px 0; /* Margin for separation */
+}
+
+h5 {
+    font-size: 18px; /* Product subheading font size */
+    margin: 15px 0; /* Margin for separation */
+}
+
+p {
+    font-size: 14px; /* Product description font size */
+    margin: 20px 0; /* Margin for separation */
+    padding-left: 50px; /* Padding from left side */
+}
+
+.available-colors {
+    display: flex;
+    align-items: center;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%; /* Make it circular */
+    transition: transform 0.2s ease; /* Smooth transition for scale */
+}
+
+/* Define base colors */
+.black-color-container {
+    background-color: black;
+}
+
+.red-color-container {
+    background-color: red;
+}
+
+.white-color-container {
+    background-color: white;
+    outline: 3px solid rgba(0, 0, 0, 0.705);
+}
+
+.tan-color-container {
+    background-color: tan; /* Tan color */
+}
+
+/* Hover Effect */
+.color-option:hover {
+    opacity: 0.7; /* Darken the color on hover */
+}
+
+/* Selected Effect */
+.color-option:focus,
+.color-option:active {
+    transform: scale(1.2); /* Enlarge when selected or active */
+    outline: 3px solid lightgray; /* Add a border effect for focus/active state */
+}
+
+
+.price {
+    display: flex; /* Flexbox for price and button alignment */
+    justify-content: space-between; /* Space between price and button */
+    align-items: center; /* Center align items */
+    margin-top: 20px; /* Separation */
+}
+
+h4 {
+    font-size: 32px; /* Font size of price value */
+    color: black; /* Price color */
+}
+
+.buy-btn {
+    width: 150px; /* Width of button */
+    height: 40px; /* Height of button */
+    background-color: #000000; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer */
+}
+
+.buy-btn:hover {
+    background-color: #218838; /* Darker color on hover */
+}
